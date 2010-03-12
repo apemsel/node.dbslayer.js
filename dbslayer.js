@@ -36,7 +36,7 @@ Server.prototype.fetch = function(object, key){
       response.addListener('end',
         function() {
           try {
-            var object = JSON.parse(data.join());
+            var object = JSON.parse(data.join(''));
           }
           catch(err) {
             e.emit('error',err);
