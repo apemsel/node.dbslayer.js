@@ -55,7 +55,7 @@ Server.prototype.fetch = function(object, key){
       );
     }
   );
-  request.close();
+  request.end();
   return e;
 }
 
